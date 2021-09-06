@@ -25,9 +25,9 @@ export default function repeticao2() {
             <table style={withBorder}>
                 <thead>
                     <tr>
-                        <th>Código</th>
-                        <th>Nome</th>
-                        <th>Preco</th>
+                        <th style={withBorder}>Código</th>
+                        <th style={withBorder}>Nome</th>
+                        <th style={withBorder}>Preco</th>
                     </tr>
                 </thead>
 
