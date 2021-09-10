@@ -1,11 +1,15 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { mega } from '../../functions/mega'
 import NumeroDisplay from "../../components/NumeroDisplay"
 
 export default function megaSena() {
 
     const [qtde, setQtde] = useState(6)
-    const [numeros, setNumeros] = useState(mega(qtde))
+    const [numeros, setNumeros] = useState([])
+
+    useEffect(() => {
+        setNumeros(mega())
+    }, [])
 
 
     function renderNumeros() {
